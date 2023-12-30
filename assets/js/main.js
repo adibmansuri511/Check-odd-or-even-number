@@ -1,19 +1,18 @@
-const addition = () => {
+const oddOrEvenNumber = () => {
 
-    // Get first value from input
-    let firstValue = Number(document.getElementById("firstValue").value);
+    // Take the number from input
+    const number = Number(document.getElementById("number").value);
 
-    // Get second value from input
-    let secondValue = Number(document.getElementById("secondValue").value);
-
-    // Operation Perform
-    let addition = firstValue + secondValue;
-
-    addition = `The sum of ${firstValue} and ${secondValue} is : ${addition}`;
-
-    console.log(addition);
-
-    document.querySelector("#h4").innerHTML = addition;
+    // Check if the number is even
+    if (number % 2 === 0) {
+        const even = `${number} is Even.`;
+        console.log(even);
+        document.getElementById("h4").innerHTML = even;
+    } else {
+        const odd = `${number} is Odd.`;
+        console.log(odd);
+        document.getElementById("h4").innerHTML = odd;
+    }
 
     return;
 }
