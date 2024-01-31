@@ -1,2 +1,2 @@
-# check-odd-or-even-number
- Practice Example
+# Check-odd-or-even-number
+JavaScript Practice Example.
